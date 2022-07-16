@@ -4,41 +4,46 @@
       box-sizing: border-box;
       padding: 0;
       margin: 0;
-      border: 1px solid red;
+      /* border: 1px solid red; */
+    }
+    html{
+        font-family: 'Outfit', sans-serif;
+        font-size: 16px;
     }
 
     body{
       background-color: hsl(212, 45%, 89%);
-      font-family: 'Outfit', sans-serif;
-      margin: auto;
     }
 
-main{
+.container{
     display: flex;
     flex-direction: column;
     width: 375px;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
     margin: auto;
 
-
 }
-    .container{
+    .card{
         background-color: hsl(0, 0%, 100%);
         padding:20px;
         border-radius: 10px;
         margin: auto;
+        box-shadow: 5px 5px px hsl(212, 45%, 89%);
     }
     h2{
         text-align: center;
         font-weight: 700;
+        margin: 20px 10px 0 10px;
     }
 
     p{
         color:  hsl(220, 15%, 55%);
-        font-size: 15px;
+        font-size: 16px;
         text-align: center;
-        margin-top: 20px;
-        padding: 0 20px;
+        margin: 20px 20px 20px 10px;
+        padding: 0 20px 10px;
         font-weight: 400;
     }
     .qrcode{
@@ -46,9 +51,17 @@ main{
         border-radius: 10px;
     }
     .attribution{ 
-        font-size: 15px; 
+        font-size: 11px; 
         text-align: center; 
     }
     .attribution a{ 
         color: hsl(228, 45%, 44%); 
+    }
+
+
+    @media screen and (max-width:400px) {
+        .card{
+            margin: auto 20px;
+        }
+        
     }
