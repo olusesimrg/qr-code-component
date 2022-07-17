@@ -30,7 +30,7 @@
         padding:20px;
         border-radius: 10px;
         margin: auto;
-        box-shadow: 5px 5px px hsl(212, 45%, 89%);
+        box-shadow: 1px 1px 2px hsl(212, 45%, 89%);
     }
     h2{
         text-align: center;
@@ -42,13 +42,16 @@
         color:  hsl(220, 15%, 55%);
         font-size: 16px;
         text-align: center;
-        margin: 20px 20px 20px 10px;
+        margin: 20px 10px 20px 10px;
         padding: 0 20px 10px;
         font-weight: 400;
     }
     .qrcode{
         width: 100%;
         border-radius: 10px;
+    }
+    footer{
+        padding:10px;
     }
     .attribution{ 
         font-size: 11px; 
@@ -62,6 +65,10 @@
     @media screen and (max-width:400px) {
         .card{
             margin: auto 20px;
+        }
+        p{
+           
+            margin: 20px 10px 20px 10px;
         }
         
     }
